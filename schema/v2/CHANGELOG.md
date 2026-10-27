@@ -7,6 +7,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0-alpha.10](https://github.com/agentclientprotocol/agent-client-protocol/compare/schema-v2.0.0-alpha.9...schema-v2.0.0-alpha.10) - 2026-10-27
+
+### Added
+
+- *(unstable-v2)* make ResourceLink.size unsigned and define unknown tool kinds ([#2521](https://github.com/agentclientprotocol/agent-client-protocol/pull/2521))
+- *(unstable-v2)* add _meta to DiffPatch, ToolCallPermissionSubject, Icon and the cancelled outcome ([#2517](https://github.com/agentclientprotocol/agent-client-protocol/pull/2517))
+- *(unstable-v2)* disallow null request IDs ([#2499](https://github.com/agentclientprotocol/agent-client-protocol/pull/2499))
+- *(unstable-v2)* add type discriminator to available commands ([#2494](https://github.com/agentclientprotocol/agent-client-protocol/pull/2494))
+- *(unstable)* link session message views and keep identity off chunks ([#2465](https://github.com/agentclientprotocol/agent-client-protocol/pull/2465))
+- *(unstable-v2)* define version mismatch errors ([#2412](https://github.com/agentclientprotocol/agent-client-protocol/pull/2412))
+
+### Fixed
+
+- *(unstable-v2)* make ToolCallLocation.line 1-based ([#2546](https://github.com/agentclientprotocol/agent-client-protocol/pull/2546))
+- *(unstable-v2)* make terminal exitCode a signed integer ([#2545](https://github.com/agentclientprotocol/agent-client-protocol/pull/2545))
+- *(schema)* require exactly one elicitation scope in v2 ([#2498](https://github.com/agentclientprotocol/agent-client-protocol/pull/2498))
+
+### Other
+
+- *(schema)* define tool call field defaults and null resets in v2 ([#2544](https://github.com/agentclientprotocol/agent-client-protocol/pull/2544))
+- *(schema)* define switch_mode as changing the mode config option in v2 ([#2543](https://github.com/agentclientprotocol/agent-client-protocol/pull/2543))
+- *(schema)* note that titled multi-select items omit type, as in MCP ([#2538](https://github.com/agentclientprotocol/agent-client-protocol/pull/2538))
+- *(schema)* ExtNotification can be sent by either side ([#2534](https://github.com/agentclientprotocol/agent-client-protocol/pull/2534))
+- *(schema)* include -32800's range in the reserved error codes ([#2531](https://github.com/agentclientprotocol/agent-client-protocol/pull/2531))
+- *(schema)* write versioned doc links in source and drop the generator's link rewriting ([#2525](https://github.com/agentclientprotocol/agent-client-protocol/pull/2525))
+- *(schema)* define which stop reason applies to v2 cancellations ([#2523](https://github.com/agentclientprotocol/agent-client-protocol/pull/2523))
+- *(schema)* mark required v2 fields in the docs and rename ClientAuthCapabilities ([#2522](https://github.com/agentclientprotocol/agent-client-protocol/pull/2522))
+- *(schema)* use wire names instead of Rust identifiers in schema descriptions ([#2520](https://github.com/agentclientprotocol/agent-client-protocol/pull/2520))
+- *(schema)* define Client handling of unknown v2 session states and tool statuses ([#2510](https://github.com/agentclientprotocol/agent-client-protocol/pull/2510))
+- *(schema)* define timeline placement for v2 entities ([#2509](https://github.com/agentclientprotocol/agent-client-protocol/pull/2509))
+- *(schema)* define session/cancel as cancelling foreground work in v2 ([#2508](https://github.com/agentclientprotocol/agent-client-protocol/pull/2508))
+- *(schema)* write the error pages for v1 and v2 ([#2504](https://github.com/agentclientprotocol/agent-client-protocol/pull/2504))
+- *(schema)* define receiver behavior for unknown v2 variants ([#2500](https://github.com/agentclientprotocol/agent-client-protocol/pull/2500))
+- *(schema)* define when session/set_config_option is available in v2 ([#2497](https://github.com/agentclientprotocol/agent-client-protocol/pull/2497))
+- *(deps)* bump the minor group with 9 updates ([#2437](https://github.com/agentclientprotocol/agent-client-protocol/pull/2437))
+
 ## [2.0.0-alpha.9](https://github.com/agentclientprotocol/agent-client-protocol/compare/schema-v2.0.0-alpha.8...schema-v2.0.0-alpha.9) - 2026-10-16
 
 ### Added
